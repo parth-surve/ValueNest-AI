@@ -91,12 +91,6 @@ if st.button("🚀 Predict Price"):
     </div>
     """, unsafe_allow_html=True)
 
-    # ---------------- GRAPH ----------------
-    fig, ax = plt.subplots()
-    ax.bar(["Predicted Price"], [price])
-    ax.set_ylabel("Price (Lakhs)")
-    ax.set_title("Price Estimation")
-    st.pyplot(fig)
 
     # ---------------- INSIGHT ----------------
     st.info("💡 Bathrooms have a strong influence on price in this model.")
